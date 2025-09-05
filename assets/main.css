@@ -1,0 +1,149 @@
+.navbar-custom{
+    height: 125px;
+}
+
+.navbar-items{
+    gap: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.login-link{
+    color: white;
+}
+
+#heroCarousel { 
+    overflow: hidden;
+    margin: 40px auto;
+}
+.carousel-item img {
+    object-fit: contain;
+    width: 100%;
+    height: 800px;
+}
+
+.carousel-item{
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(255, 255, 255, 0.7); 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: white;
+}
+
+.cart-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon-wrapper{
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon{
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s ease;
+}
+
+.cart-icon:hover{
+    transform: scale(1.1);
+}
+
+.cart-count{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: white;
+    color: black;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 50%;
+    min-width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+.carousel-item img {
+    will-change: transform;
+}
+
+
+.servicios{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    gap: 35px;
+}
+
+.servicios-section{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.servicios-layout {
+    min-height: 120px;
+}
+
+.servicio-link {
+    font-size: 1.2rem;
+    color: #212529;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.servicio-link:hover {
+    background: #e9ecef;
+}
+
+.servicio-principal {
+    font-weight: bold;
+    background: #d1e7dd;
+    color: #0f5132;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+@media(max-width: 768px){
+    .navbar-items{
+        gap: 20px;
+    }
+    .login-link{
+        margin-right: 15px;
+    }
+    .carousel-item img{
+        height: 300px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-items {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .d-flex.align-items-center.ms-lg-auto {
+        margin-left: 0 !important;
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+}
+
